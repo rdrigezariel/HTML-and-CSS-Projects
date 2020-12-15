@@ -1,2 +1,2 @@
 # HTML and CSS Projects
- Repository for HTML and CSS projects from TTA course work.
+ This repository will contain HTML and CSS projects I complete from The Tech Academy course work.

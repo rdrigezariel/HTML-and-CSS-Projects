@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>The Foothills Resort</title>
+    <link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
 </head>
 <body>
     <!-- NAV -->
-    <div>
-        <div>
+    <div class="wrap">
+        <div class="menu-container">
             <nav>
                 <a href="#home" id="link">
                     Home
@@ -17,7 +18,7 @@
                 </a> |
                 <a href="#contact">
                     Schedule an Appointment
-                </a> |
+                </a>
             </nav>
         </div>
     </div>
@@ -27,7 +28,7 @@
     <div id="home">
         <div>
             <div>
-                <span>The Foothills Resort</span>
+                <span class="head-main">The Foothills Resort</span>
             </div>
         </div>
     </div>
@@ -37,7 +38,7 @@
     <section>
         <div id="gallery">
             <h1>Gallery</h1>
-            <div>
+            <div class="flex-container">
                 <div>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/D5A98Ra8Bw4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -150,25 +151,39 @@
     <!-- CONTACT -->
     <section>
         <div id="contact">
-            <h1>Schedule an Appointment</h1>
-            <div>
-                <form action="" method="POST">
-                    First name: <input type="text" name="first_name">
+            <h1>Reservations</h1>
+            <div class="rsvp">
+                <h2>
+                    <span>Life is a journey, make the most of it.</span>
                     <br/>
-                    Last name: <input type="text" name="last_name">
-                    <br/>
-                    Email address: <input type="text" name="email">
-                    <br/>
-                    Phone number: <input type="text" name="phone">
-                    <br/>
-                </form>
+                    Book your trip today!
+                </h2>
+                <p>
+                    Please provide us with your basic contact information, we will reach out to process your reservation.
+                </p>
+                <div class="form-order">
+                    <form action="" method="POST">
+                        <input class="rsvp" type="text" value="" placeholder="First Name">
+                        <input class="rsvp" type="text" value="" placeholder="Last Name">
+                        <input class="rsvp" type="text" value="" placeholder="Email Address">
+                        <input class="rsvp" type="text" value="" placeholder="Phone Number">
+                        <br/>
+                        <div class="submit">
+                            <input type="submit" value="Submit">
+                        </div>
+                        <div class="form-spacer">
+                            <label class="terms">Terms and Conditions</label>
+                        </div>
+                        <br/>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
     <!-- END OF CONTACT -->
 
     <!-- FOOTER -->
-    <div>
+    <div class=>
         <footer>www.foothills.tour &nbsp;|&nbsp;&copy; 2020</footer>
     </div>
 </body>

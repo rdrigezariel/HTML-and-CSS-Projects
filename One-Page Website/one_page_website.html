@@ -40,108 +40,117 @@
             <h1>Gallery</h1>
             <div class="flex-container">
                 <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/D5A98Ra8Bw4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe style="text-align: center;" width="560" height="315" src="https://www.youtube.com/embed/D5A98Ra8Bw4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
-                <!-- PHOTO-CONTAINER 1 -->
-                <div>
-                    <div>
-                        <img class="image" src="images/thumb/thumbnail_1.jpg" alt="Trip 1">
-                        <div>
-                            <h1>Click to Enlarge</h1>
-                            <p>We have several tours daily, book your trip today!</p>
-                        </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/thumb/thumbnail_1.jpg" style="width: 150px; height: 100px;" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="images/thumb/thumbnail_2.jpg" style="width: 150px; height: 100px;" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="images/thumb/thumbnail_3.jpg" style="width: 150px; height: 100px;" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="images/thumb/thumbnail_4.jpg" style="width: 150px; height: 100px;" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="images/thumb/thumbnail_5.jpg" style="width: 150px; height: 100px;" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="images/thumb/thumbnail_6.jpg" style="width: 150px; height: 100px;" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="images/thumb/thumbnail_7.jpg" style="width: 150px; height: 100px;" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="images/thumb/thumbnail_8.jpg" style="width: 150px; height: 100px;" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="images/thumb/thumbnail_9.jpg" style="width: 150px; height: 100px;" onclick="openModal();currentSlide(9)" class="hover-shadow">
                     </div>
                 </div>
-                <!-- END PHOTO-CONTAINER 1 -->
-                <!-- PHOTO-CONTAINER 2 -->
-                <div>
-                    <div>
-                        <img class="image" src="images/thumb/thumbnail_2.jpg" alt="Trip 2">
-                        <div>
-                            <h1>Click to Enlarge</h1>
-                            <p>We have several tours daily, book your trip today!</p>
+        
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+        
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 9</div>
+                            <img src="images/thumb/thumbnail_1.jpg" style="width:100%; height: 600px;">
                         </div>
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 9</div>
+                            <img src="images/thumb/thumbnail_2.jpg" style="width:100%; height: 600px;">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 9</div>
+                            <img src="images/thumb/thumbnail_3.jpg" style="width:100%; height: 600px;">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 9</div>
+                            <img src="images/thumb/thumbnail_4.jpg" style="width:100%; height: 600px;">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 9</div>
+                            <img src="images/thumb/thumbnail_5.jpg" style="width:100%; height: 600px;">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 9</div>
+                            <img src="images/thumb/thumbnail_6.jpg" style="width:100%; height: 600px;">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">7 / 9</div>
+                            <img src="images/thumb/thumbnail_7.jpg" style="width:100%; height: 600px;">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">8 / 9</div>
+                            <img src="images/thumb/thumbnail_8.jpg" style="width:100%; height: 600px;">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">9 / 9</div>
+                            <img src="images/thumb/thumbnail_9.jpg" style="width:100%; height: 600px;">
+                        </div>
+        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+        
+                        <div class="column">
+                            <img class="demo" src="images/thumb/thumbnail_1.jpg" style="width: 100px; height: 100px;" onclick="currentSlide(1)" alt="TBD">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="images/thumb/thumbnail_2.jpg" style="width: 100%; height: 100px;" onclick="currentSlide(2)" alt="TBD">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="images/thumb/thumbnail_3.jpg" style="width: 100%; height: 100px;" onclick="currentSlide(3)" alt="TBD">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="images/thumb/thumbnail_4.jpg" style="width: 100%; height: 100px;" onclick="currentSlide(4)" alt="TBD">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="images/thumb/thumbnail_5.jpg" style="width: 100%; height: 100px;" onclick="currentSlide(5)" alt="TBD">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="images/thumb/thumbnail_6.jpg" style="width: 100%; height: 100px;" onclick="currentSlide(6)" alt="TBD">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="images/thumb/thumbnail_7.jpg" style="width: 100%; height: 100px;" onclick="currentSlide(7)" alt="TBD">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="images/thumb/thumbnail_8.jpg" style="width: 100%; height: 100px;" onclick="currentSlide(8)" alt="TBD">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="images/thumb/thumbnail_9.jpg" style="width: 100%; height: 100px;" onclick="currentSlide(9)" alt="TBD">
+                        </div>
+        
                     </div>
                 </div>
-                <!-- END PHOTO-CONTAINER 2 -->
-                <!-- PHOTO-CONTAINER 3 -->
-                <div>
-                    <div>
-                        <img class="image" src="images/thumb/thumbnail_3.jpg" alt="Trip 3">
-                        <div>
-                            <h1>Click to Enlarge</h1>
-                            <p>We have several tours daily, book your trip today!</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 3 -->
-                <!-- PHOTO-CONTAINER 4 -->
-                <div>
-                    <div>
-                        <img class="image" src="images/thumb/thumbnail_4.jpg" alt="Trip 4">
-                        <div>
-                            <h1>Click to Enlarge</h1>
-                            <p>We have several tours daily, book your trip today!</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 4 -->
-                <!-- PHOTO-CONTAINER 5 -->
-                <div>
-                    <div>
-                        <img class="image" src="images/thumb/thumbnail_5.jpg" alt="Trip 5">
-                        <div>
-                            <h1>Click to Enlarge</h1>
-                            <p>We have several tours daily, book your trip today!</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 5 -->
-                <!-- PHOTO-CONTAINER 6 -->
-                <div>
-                    <div>
-                        <img class="image" src="images/thumb/thumbnail_6.jpg" alt="Trip 6">
-                        <div>
-                            <h1>Click to Enlarge</h1>
-                            <p>We have several tours daily, book your trip today!</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 6 -->
-                <!-- PHOTO-CONTAINER 7 -->
-                <div>
-                    <div>
-                        <img class="image" src="images/thumb/thumbnail_7.jpg" alt="Trip 7">
-                        <div>
-                            <h1>Click to Enlarge</h1>
-                            <p>We have several tours daily, book your trip today!</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 7 -->
-                <!-- PHOTO-CONTAINER 8 -->
-                <div>
-                    <div>
-                        <img class="image" src="images/thumb/thumbnail_8.jpg" alt="Trip 8">
-                        <div>
-                            <h1>Click to Enlarge</h1>
-                            <p>We have several tours daily, book your trip today!</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 8 -->
-                <!-- PHOTO-CONTAINER 9 -->
-                <div>
-                    <div>
-                        <img class="image" src="images/thumb/thumbnail_9.jpg" alt="Trip 9">
-                        <div>
-                            <h1>Click to Enlarge</h1>
-                            <p>We have several tours daily, book your trip today!</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 9 -->
 
             </div>
         </div>
@@ -186,5 +195,7 @@
     <div class=>
         <footer>www.foothills.tour &nbsp;|&nbsp;&copy; 2020</footer>
     </div>
+
+    <script src="js/one_page_website.js"></script>
 </body>
 </html>
